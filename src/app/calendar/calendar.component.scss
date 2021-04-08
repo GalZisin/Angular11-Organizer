@@ -5,13 +5,13 @@ table {
     td,
     th {
         border: 1px solid #000;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
     }
     td {
         text-align: center;
-        transition: all .2s;
+        transition: all 0.2s;
         &.disabled {
-            opacity: .5;
+            opacity: 0.5;
         }
         &:hover:not(.disabled) {
             background: #eee;
@@ -23,6 +23,24 @@ table {
         }
         .selected {
             color: blue;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    table {
+        td,
+        th {
+            padding: 0.5rem 0.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    table {
+        td,
+        th {
+            padding: 0.5rem 0.1rem;
         }
     }
 }
